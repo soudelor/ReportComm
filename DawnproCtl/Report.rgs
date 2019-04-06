@@ -1,0 +1,26 @@
+HKCR
+{
+	DawnproComm.Report.1 = s 'Report Class'
+	{
+		CLSID = s '{34A9809A-579E-4DC0-A39C-B4F09446A708}'
+	}
+	DawnproComm.Report = s 'Report Class'
+	{
+		CLSID = s '{34A9809A-579E-4DC0-A39C-B4F09446A708}'
+		CurVer = s 'DawnproComm.Report.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {34A9809A-579E-4DC0-A39C-B4F09446A708} = s 'Report Class'
+		{
+			ProgID = s 'DawnproComm.Report.1'
+			VersionIndependentProgID = s 'DawnproComm.Report'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{5D140B51-0DEF-434F-A75F-181A41C1E2DA}'
+		}
+	}
+}

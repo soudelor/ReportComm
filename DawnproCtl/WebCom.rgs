@@ -1,0 +1,33 @@
+HKCR
+{
+	DawnproComm.WebCom.1 = s 'WebCom Class'
+	{
+		CLSID = s '{C79C2515-D2FA-4FC3-9208-060900571A1C}'
+	}
+	DawnproComm.WebCom = s 'WebCom Class'
+	{
+		CLSID = s '{C79C2515-D2FA-4FC3-9208-060900571A1C}'
+		CurVer = s 'DawnproComm.WebCom.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C79C2515-D2FA-4FC3-9208-060900571A1C} = s 'WebCom Class'
+		{
+			ProgID = s 'DawnproComm.WebCom.1'
+			VersionIndependentProgID = s 'DawnproComm.WebCom'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{5D140B51-0DEF-434F-A75F-181A41C1E2DA}'
+			'Version' = s '1.0'
+		}
+	}
+}

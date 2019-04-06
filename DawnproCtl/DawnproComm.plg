@@ -1,0 +1,250 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DawnproComm - Win32 Release MinSize--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /tlb ".\DawnproComm.tlb" /h "DawnproComm.h" /iid "DawnproComm_i.c" /Oicf "D:\data\My Document\project\DawnproCtl\DawnproComm.idl""
+Creating command line "rc.exe /l 0x804 /fo"ReleaseMinSize/DawnproComm.res" /d "NDEBUG" "D:\data\My Document\project\DawnproCtl\DawnproComm.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A5.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_DLL" /FR"ReleaseMinSize/" /Fp"ReleaseMinSize/DawnproComm.pch" /Yu"stdafx.h" /Fo"ReleaseMinSize/" /Fd"ReleaseMinSize/" /FD /c 
+"D:\data\My Document\project\DawnproCtl\BarCodeObj.cpp"
+"D:\data\My Document\project\DawnproCtl\BaseFun.cpp"
+"D:\data\My Document\project\DawnproCtl\Cell.cpp"
+"D:\data\My Document\project\DawnproCtl\DawnproComm.cpp"
+"D:\data\My Document\project\DawnproCtl\HttpFile.cpp"
+"D:\data\My Document\project\DawnproCtl\PageData.cpp"
+"D:\data\My Document\project\DawnproCtl\PrintData.cpp"
+"D:\data\My Document\project\DawnproCtl\Report.cpp"
+"D:\data\My Document\project\DawnproCtl\Table.cpp"
+"D:\data\My Document\project\DawnproCtl\WebCom.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A6.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_DLL" /FR"ReleaseMinSize/" /Fo"ReleaseMinSize/" /Fd"ReleaseMinSize/" /FD /c 
+"D:\data\My Document\project\DawnproCtl\code128.c"
+"D:\data\My Document\project\DawnproCtl\code39.c"
+"D:\data\My Document\project\DawnproCtl\ean.c"
+"D:\data\My Document\project\DawnproCtl\format.c"
+"D:\data\My Document\project\DawnproCtl\i25.c"
+"D:\data\My Document\project\DawnproCtl\library.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A7.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_DLL" /FR"ReleaseMinSize/" /Fp"ReleaseMinSize/DawnproComm.pch" /Yc"stdafx.h" /Fo"ReleaseMinSize/" /Fd"ReleaseMinSize/" /FD /c 
+"D:\data\My Document\project\DawnproCtl\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A7.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib WININET.LIB /nologo /subsystem:windows /dll /incremental:no /pdb:"ReleaseMinSize/DawnproComm.pdb" /machine:I386 /def:".\DawnproComm.def" /out:"ReleaseMinSize/DawnproComm.dll" /implib:"ReleaseMinSize/DawnproComm.lib" 
+".\ReleaseMinSize\BarCodeObj.obj"
+".\ReleaseMinSize\BaseFun.obj"
+".\ReleaseMinSize\Cell.obj"
+".\ReleaseMinSize\code128.obj"
+".\ReleaseMinSize\code39.obj"
+".\ReleaseMinSize\DawnproComm.obj"
+".\ReleaseMinSize\ean.obj"
+".\ReleaseMinSize\format.obj"
+".\ReleaseMinSize\HttpFile.obj"
+".\ReleaseMinSize\i25.obj"
+".\ReleaseMinSize\library.obj"
+".\ReleaseMinSize\PageData.obj"
+".\ReleaseMinSize\PrintData.obj"
+".\ReleaseMinSize\Report.obj"
+".\ReleaseMinSize\StdAfx.obj"
+".\ReleaseMinSize\Table.obj"
+".\ReleaseMinSize\WebCom.obj"
+".\ReleaseMinSize\DawnproComm.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A8.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A9.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\ReleaseMinSize\DawnproComm.dll"
+echo regsvr32 exec. time > ".\ReleaseMinSize\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A9.bat"
+Creating Type Library...
+Microsoft (R) MIDL Compiler Version 5.01.0164  
+Copyright (c) Microsoft Corp 1991-1997. All rights reserved.
+Processing D:\data\My Document\project\DawnproCtl\DawnproComm.idl
+DawnproComm.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ocidl.idl
+ocidl.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oleidl.idl
+oleidl.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\servprov.idl
+servprov.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\urlmon.idl
+urlmon.idl
+Processing E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\msxml.idl
+msxml.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(547) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+Compiling...
+BarCodeObj.cpp
+D:\data\My Document\project\DawnproCtl\BarCodeObj.cpp(13) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+D:\data\My Document\project\DawnproCtl\BarCodeObj.cpp(143) : warning C4101: 'delta' : unreferenced local variable
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+BaseFun.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+Cell.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+DawnproComm.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+HttpFile.cpp
+D:\data\My Document\project\DawnproCtl\HttpFile.cpp(101) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+PageData.cpp
+D:\data\My Document\project\DawnproCtl\PageData.cpp(15) : warning C4305: '=' : truncation from 'const double' to 'float'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+PrintData.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+Report.cpp
+D:\data\My Document\project\DawnproCtl\Report.cpp(359) : warning C4101: 'lRet2' : unreferenced local variable
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+Table.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+WebCom.cpp
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        E:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+Generating Code...
+Compiling...
+code128.c
+code39.c
+ean.c
+format.c
+D:\data\My Document\project\DawnproCtl\format.c(4) : warning C4013: 'sprintf' undefined; assuming extern returning int
+i25.c
+D:\data\My Document\project\DawnproCtl\i25.c(126) : warning C4018: '<' : signed/unsigned mismatch
+library.c
+Generating Code...
+D:\data\My Document\project\DawnproCtl\code39.c(165) : warning C4761: integral size mismatch in argument; conversion supplied
+D:\data\My Document\project\DawnproCtl\code128.c(522) : warning C4761: integral size mismatch in argument; conversion supplied
+Linking...
+   Creating library ReleaseMinSize/DawnproComm.lib and object ReleaseMinSize/DawnproComm.exp
+<h3>Output Window</h3>
+Performing registration
+
+
+
+<h3>Results</h3>
+DawnproComm.dll - 0 error(s), 65 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0114)file://C:\Documents and Settings\叶国栋\Local Settings\Temporary Internet Files\Content.IE5\KHEVO1QN\AspPrint1.htm -->
+<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML><HEAD>
+<!-- classid="clsid:C79C2515-D2FA-4FC3-9208-060900571A1C"-->
+<!-- PROGID="DawnproComm.WebCom"-->
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR>
+<OBJECT id="COM1"  classid="clsid:C79C2515-D2FA-4FC3-9208-060900571A1C"  name="CoCom1" ></OBJECT>
+
+<SCRIPT language=javascript>
+function InitWebCom()
+{
+	COM1.OpenPort(1,9600);
+}
+function CloseWebCom()
+{
+	COM1.ClosePort();
+}
+function printctl()
+{
+	var str;
+	str = "<STX><ESC>C1<ETX> <STX><SI>I3<ETX> <STX><ESC>P<ETX> <STX>E1;F1;<ETX>" +
+                          "<STX>H01;o20,450;f1;b0;c7;k8;d3, CSH:LDC131D2330058763 ;<ETX>" +
+                          "<STX>H02;o60,450;f1;b0;c7;k8;d3,  ANOSEQ:1234567   YS: RDM55 ;<ETX> " +
+                          "<STX>H03;o100,450;f1;b0;c7;k8;d3,  ZB:;<ETX>" +
+                          "<STX>H04;o100,360;f1;b0;c12;k8;d3, 00-A01-0102 ;<ETX>" +
+                          "<STX>H05;o140,450;f1;b0;c7;k8;d3,  CX:;<ETX>"
+                          "<STX>H06;o140,360;f1;b0;c12;k8;d3,2005-10-10;<ETX>"   
+                          "<STX>R<ETX>" +
+                          "<STX><ESC>E1,1<CAN><ETX>" +
+                          "<STX><RS>1<ETX>" +
+                          "<STX><SI>D108<ETX>" +
+                          "<STX><ETB><ETX>"
+	COM1.MsgInfo("测试串口控件");
+	COM1.TraceInfo("C:\\FILE.txt",str);
+	COM1.SendData("123456789012345678901234567890123456789012345678901234567890");
+	
+}
+</SCRIPT>
+</HEAD>
+<BODY onLoad="InitWebCom()" onUnload="CloseWebCom()">
+<FORM id=form name=form method=post>
+<TABLE cellSpacing=1 cellPadding=1 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD noWrap align=right>&nbsp;</TD>
+    <TD noWrap align=left>        <INPUT type=button  value="我的控件"   onclick="printctl();" name=submit >
+        <INPUT type="text" name="text" ></TD></TR></TBODY></TABLE></FORM></BODY></HTML>

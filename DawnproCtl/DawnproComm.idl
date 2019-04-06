@@ -1,0 +1,108 @@
+// DawnproComm.idl : IDL source for DawnproComm.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DawnproComm.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(B25F6435-55EA-4284-AED0-18304F565FCF),
+		dual,
+		helpstring("IWebCom Interface"),
+		pointer_default(unique)
+	]
+	interface IWebCom : IDispatch
+	{
+		[propput, id(DISPID_ENABLED)]
+		HRESULT Enabled([in]VARIANT_BOOL vbool);
+		[propget, id(DISPID_ENABLED)]
+		HRESULT Enabled([out,retval]VARIANT_BOOL* pbool);
+		[propput, id(DISPID_APPEARANCE)]
+		HRESULT Appearance([in]short appearance);
+		[propget, id(DISPID_APPEARANCE)]
+		HRESULT Appearance([out, retval]short* pappearance);
+		[id(1), helpstring("method OpenPort")] HRESULT OpenPort(long nPort,long nBaud);
+		[id(2), helpstring("method SendData")] HRESULT SendData(BSTR data);
+		[id(3), helpstring("method ClosePort")] HRESULT ClosePort();
+		[id(4), helpstring("method MsgInfo")] HRESULT MsgInfo(BSTR Data);
+		[id(5), helpstring("method TraceInfo")] HRESULT TraceInfo(BSTR File,BSTR Data);
+		[id(6), helpstring("method OpenPortParam")] HRESULT OpenPortParam(long nPort, long nBaud, long nByteSzie, long nParity, long StopBit);
+	};
+	
+
+	
+	[
+		object, dual,
+		uuid(0A955494-4A7F-4283-BCDE-CE915D1CE171),
+		helpstring("IWebComUI Interface"),
+		pointer_default(unique)
+	]
+	interface IWebComUI : IDispatch
+	{
+		// Example method that will be called by the HTML
+		HRESULT OnClick([in]IDispatch* pdispBody, [in]VARIANT varColor);
+	};
+	[
+		object,
+		uuid(422C35F2-A91C-47C4-8764-70DC8B902FF1),
+		dual,
+		helpstring("IReport Interface"),
+		pointer_default(unique)
+	]
+	interface IReport : IDispatch
+	{
+		[propput, id(1), helpstring("property FilePath")] HRESULT FilePath([in] BSTR newVal);
+		[id(2), helpstring("method Print")] HRESULT Print(long* rtnValue);
+		[id(3), helpstring("method PrintString")] HRESULT PrintString(BSTR Content);
+		[propput, id(4), helpstring("property Orientation")] HRESULT Orientation([in] short newVal);
+		[propput, id(5), helpstring("property ShowPrintDlg")] HRESULT ShowPrintDlg([in] short newVal);		
+		[propget, id(6), helpstring("property Printer")] HRESULT Printer([out, retval] BSTR *pVal);
+		[propput, id(6), helpstring("property Printer")] HRESULT Printer([in] BSTR newVal);
+	};
+		
+	[
+		object, dual,
+		uuid(EC730A2B-4DD2-4BAE-AD8A-FAAFAB8DCF54),
+		helpstring("IReportUI Interface"),
+		pointer_default(unique)
+	]
+	interface IReportUI : IDispatch
+	{
+		// Example method that will be called by the HTML
+		HRESULT OnClick([in]IDispatch* pdispBody, [in]VARIANT varColor);
+	};
+		
+[
+	uuid(5D140B51-0DEF-434F-A75F-181A41C1E2DA),
+	version(1.0),
+	helpstring("DawnproComm 1.0 Type Library")
+]
+library DAWNPROCOMMLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(C79C2515-D2FA-4FC3-9208-060900571A1C),
+		helpstring("WebCom Class")
+	]
+	coclass WebCom
+	{
+		[default] interface IWebCom;
+		interface IWebComUI;
+	};
+	[
+		uuid(34A9809A-579E-4DC0-A39C-B4F09446A708),
+		helpstring("Report Class")
+	]
+	coclass Report
+	{
+		[default] interface IReport;
+	};
+
+};
