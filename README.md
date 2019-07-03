@@ -1,5 +1,6 @@
 # ReportComm
 Universal web print control supports form printing and serial printer. It can print directly in browser without bouncing box.
+web表单打印和串口打印
 
 # Advantage
 ## 1. Direct printing
