@@ -31,4 +31,4 @@ web表单打印和串口打印,可以在IE浏览器上实现精确到毫米的�
 #### qq:19760087
 
 # Others
-#### the code is written by me forteen years ago, I miss that time very much.
+#### the code is written by me 15 years ago, I miss that time very much.
